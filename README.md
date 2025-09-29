@@ -25,6 +25,14 @@ No database was required for this assessment. The project is kept intentionally 
 
 ---
 
+### Demo Video
+
+A short demo video showcasing the application will be placed here.
+(Link or embedded video to be added later)
+
+---
+
+
 ## How to Run
 
 ### 1. Prerequisites
