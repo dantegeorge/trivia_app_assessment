@@ -32,7 +32,7 @@ public class TriviaController {
         }
     }
 
-    @PostMapping("/checkanswers")
+    @PostMapping("/check-answers")
     public AnswerResponse checkAnswer(@RequestBody AnswerRequest request) {
         return triviaService.checkAnswer(request);
     }
