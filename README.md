@@ -79,7 +79,6 @@ java -jar target/trivia_app_assessment-0.0.1-SNAPSHOT.jar
 
   * Open `http://localhost:8080` in your browser
 
----
 
 ## Assessment Context
 
