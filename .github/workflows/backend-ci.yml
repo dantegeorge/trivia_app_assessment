@@ -26,4 +26,5 @@ jobs:
           java-version: 17
 
       - name: Build and run tests
-        run: mvn test
+        run: mvn clean test
+        working-directory: trivia_app_assessment
