@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Trivia App</title>
+    <script>
+        async function loadQuestion() {
+          let response = await fetch('/api/questions');
+          let question = await response.json();
+
+          function decodeHtml(html) {
+            const txt = document.createElement('textarea');
+            txt.innerHTML = html;
+            return txt.value;
+            }
+
+          document.getElementById('question').innerText = decodeHtml(question.questionText)
+
+          let answersDiv = document.getElementById('answers');
+          answersDiv.innerHTML = '';
+          question.possibleAnswers.forEach(answer => {
+            let button = document.createElement('button');
+            button.innerText = answer;
+            button.onclick = () => checkAnswer(question.questionText, answer);
+            answersDiv.appendChild(button);
+          });
+        }
+
+        async function checkAnswer(question, chosenAnswer) {
+          let response = await fetch('/api/check-answers', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({question, chosenAnswer})
+          });
+          let result = await response.json();
+          alert(result.correct ? "Correct!" : "Wrong!");
+        }
+    </script>
+</head>
+<body>
+<h1>Trivia App</h1>
+<button onclick="loadQuestion()">Get a Question</button>
+<h2 id="question"></h2>
+<div id="answers"></div>
+</body>
+</html>
