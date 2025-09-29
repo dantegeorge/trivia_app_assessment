@@ -1,8 +1,7 @@
 # Trivia App Assessment
 
 This is a simple **Java Spring Boot backend** application that wraps the [Open Trivia Database API](https://opentdb.com/).  
-It provides a backend API so that users can answer trivia questions without being able to see the correct answers directly in the JSON.  
-The frontend is built in **Next.js** with TailwindCSS for styling.
+It provides a backend API so that users can answer trivia questions without being able to see the correct answers directly in the JSON. The frontend is built in **Next.js** with TailwindCSS for styling.
 
 ---
 
@@ -19,7 +18,6 @@ The task was to create:
     * Request new trivia questions
     * Select and submit answers
     * See whether their answer was correct
-    * Experience a responsive UI with light/dark mode (TailwindCSS)
 
 No database is required for this assessment. The project is intentionally kept simple for clarity.
 
@@ -57,6 +55,7 @@ cd trivia_app_assessment
 ### 3. Run the Backend
 
 Using Maven:
+
 ```bash
 mvn spring-boot:run
 ```
