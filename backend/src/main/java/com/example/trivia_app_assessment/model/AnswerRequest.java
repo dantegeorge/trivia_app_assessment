@@ -2,7 +2,6 @@ package com.example.trivia_app_assessment.model;
 
 /**
  * Represents the user's submitted answer.
- * Keeping input objects separate improves clarity (SRP).
  */
 public class AnswerRequest {
     private String question;

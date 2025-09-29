@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * Represents a trivia question shown to the user.
- * This class is a simple data holder (SRP).
  */
 public class Question {
     private String questionText;

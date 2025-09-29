@@ -53,7 +53,6 @@ public class TriviaService {
         // Reset and store only the latest correct answer
         correctAnswers.clear();
         correctAnswers.add(correctAnswer);
-        System.out.println("Correct answer is: " + correctAnswer);
         return new Question(questionText, allAnswers);
     }
 
@@ -64,7 +63,6 @@ public class TriviaService {
         // Compare against the single stored correct answer
         String storedAnswer = correctAnswers.get(0);
         boolean isCorrect = storedAnswer.equals(request.getChosenAnswer());
-        System.out.println("Correct answer is: " + storedAnswer + isCorrect);
         return new AnswerResponse(isCorrect);
     }
 }
