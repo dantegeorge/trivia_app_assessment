@@ -27,8 +27,7 @@ No database is required for this assessment. The project is intentionally kept s
 
 ### Demo Video
 
-A short demo video showcasing the application will be placed here.  
-(Link or embedded video to be added later)
+[![Watch the demo](https://img.youtube.com/vi/Xs9bMp7YZNk/0.jpg)](https://youtu.be/Xs9bMp7YZNk)
 
 ---
 
@@ -90,3 +89,5 @@ Frontend will run on http://localhost:3000 and automatically fetch questions fro
 Open your browser to http://localhost:3000
 
 Click Get Question, select an answer, and see feedback in the UI.
+
+---
