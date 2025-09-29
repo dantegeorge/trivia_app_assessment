@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Java
+/backend/target/
+
+# Node
+/frontend/node_modules/
