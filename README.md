@@ -18,7 +18,6 @@ The task was to create:
     * Request new trivia questions
     * Select and submit answers
     * See whether their answer was correct
-    * Experience a responsive UI with light/dark mode (TailwindCSS)
 
 No database is required for this assessment. The project is intentionally kept simple for clarity.
 
@@ -57,6 +56,7 @@ cd trivia_app_assessment
 ### 3. Run the Backend
 
 Using Maven:
+
 ```bash
 mvn spring-boot:run
 ```
